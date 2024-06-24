@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="./jss/movie.js">
+    </script>
+   
+</head>
+<body>
+    <table>
+        <tr>
+            <td>movie name</td>
+            <td>
+                <input type="text" id="mname" />
+            </td>
+        </tr>
+        <tr>
+            <td>movie duration</td>
+            <td>
+                <input type="number" min="2" max="4" id="mdn" /> 
+            </td>
+        </tr>
+        <tr>
+            <td>movie rating</td>
+            <td>
+                <input type="number" min="1" max="5" id="mrate" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="assignMovieData()">Register</button>
+            </td>
+            <td>
+                <button onclick="showMovieData()">Show</button>
+            </td>
+           
+        </tr>
+
+    </table>
+    <div id="msgDiv" style="background-color:violet;height:50%;width:25%">
+
+    </div>
+    
+</body>
+</html>

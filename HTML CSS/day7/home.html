@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>home page</title>
+        <style>
+            body{
+                border:10px solid blue;
+                height:1000px;
+                background-image:url("../image/bank.jpg");
+                background-size: cover;
+            }
+            #title{
+                font-size: 1.5em;
+            }
+            #img{
+                position:absolute;
+                float:left;
+                left: 300px;
+                top:100px;
+            }
+            #n1{
+                position:absolute;
+                float:right;
+                left:600px;
+                top:100px;
+            }
+            #form{
+                position:absolute;
+                top: 350px;
+                border: 5px solid blue;
+                left:35%;
+                padding:15px;
+
+            }
+            #s1{
+                position: absolute;
+                left:25%;
+            }
+            #c1{
+                position: absolute;
+                left:50%;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(
+                function(){
+                    $("#l1").click(
+                        function(){
+                            let name=$("#us").val();
+                            let pass=$("#pd").val();
+                            name==""&&pass==""?alert("username or password should not be empty "): name=="nithu"&&pass=="1966"? window.open("personal-info.html"):alert("incorrect credentials");;
+                        }
+                    )
+                }
+            )
+        </script>
+    </head>
+    <body>
+        <div>
+            <center><h3><b id="title">NVP Bank</b></h3></center>
+            <br><br><br>
+            <img id="img" src="../image/handshake1.jpg" height="200" width="200">
+            <h3 id="n1"><br><br>"We believe in your success"</h3>
+            
+        </div>
+        <div id="form">
+            <form>
+            <h4><center><b>login to apply loan</b></center></h4>
+              <label>USERNAME:</label> 
+              <input id="us" type="text"><br><br>
+              <label>PASSWORD:</label> 
+              <input id="pd" type="password"><br><br>
+              <button id="l1" value="login"> Login</button>
+              <button id="c1" value="cancel">Cancel</button>
+              
+
+
+            </form>
+        </div>
+    </body>
+</html>
