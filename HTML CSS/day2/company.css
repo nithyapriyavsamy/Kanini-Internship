@@ -1,0 +1,26 @@
+body{
+    background-color:aquamarine;
+}
+#logo{
+    border:5px pink solid;
+    border-radius:10px; 
+    padding: 10px;
+    top:100px;
+    float:left;
+    
+    }
+#title{
+    height:120;
+    border:5px pink solid;
+    border-radius:10px;
+    left:200px;
+    top:50px;
+    text-align:center ;
+    font-size:2em;
+    font-family: Arial;
+    color:blueviolet;
+    background-color:aquamarine;
+}
+#frame{
+    border-color: blue 10px solid;
+}

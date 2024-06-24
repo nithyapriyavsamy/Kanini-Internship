@@ -1,0 +1,17 @@
+#div1{
+    border:10px solid blueviolet;
+    position:absolute;
+    left:40%;
+    padding:10px;
+    height:300px;
+    width:200px;
+
+}
+#div2{
+    border:10px solid blueviolet;
+    position:absolute;
+    top:400px;
+    left:40%;
+    height:100px;
+    width:200px; 
+}

@@ -1,0 +1,11 @@
+#mpBody,#ACBody,#ABody,#HBody,#IPBody{
+    background-color: aqua;
+    height: 550px;
+    width:500px;
+    position:absolute;
+    left:35%;
+    padding:10px;
+}
+body{
+    background-color: black;
+}

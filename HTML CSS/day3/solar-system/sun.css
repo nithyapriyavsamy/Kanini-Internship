@@ -1,0 +1,137 @@
+body{
+    height: 100vh;
+    background-image:url(https://media.istockphoto.com/id/178149253/photo/deep-space-background.jpg?b=1&s=170667a&w=0&k=20&c=OxpCMz1m9oPZx7HHZq5viD4t5njImByHBG-NLWxV8BA=);
+    background-size: cover;
+    
+}
+div{
+    text-align: center;
+}
+
+.star,.planet{
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: calc(50% - var(--size)/2);
+    left: calc(50% - var(--size)/2);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.sun{
+    --size:100px;
+    background: linear-gradient(45deg,orange,yellow,red);
+    
+}
+
+.mercury{
+    --size:30px;
+    background: gray;
+    animation:mercury 3s linear infinite ;
+}
+@keyframes mercury{
+    from{
+        transform: rotate(0) translateX(80px);
+    }
+    to{
+        transform: rotate(360deg)translateX(80px) ;
+    }
+}
+.venus{
+    --size:50px;
+    background: burlywood;
+    animation:venus 3.5s linear infinite ;
+}
+@keyframes venus{
+    from{
+        transform: rotate(0) translateX(120px);
+    }
+    to{
+        transform: rotate(360deg)translateX(120px) ;
+    }
+}
+.earth{
+    --size:55px;
+    background: linear-gradient(45deg,blue,brown,green,white);
+    animation:earth 4s linear infinite ;
+}
+@keyframes earth{
+    from{
+        transform: rotate(0) translateX(160px);
+    }
+    to{
+        transform: rotate(360deg)translateX(160px) ;
+    }
+}
+.mars{
+    --size:60px;
+    background: linear-gradient(45deg,gray,brown,red);
+    animation:mars 4.5s linear infinite ;
+}
+@keyframes mars{
+    from{
+        transform: rotate(0) translateX(200px);
+    }
+    to{
+        transform: rotate(360deg)translateX(200px) ;
+    }
+}
+.jupiter{
+    --size:70px;
+    background: linear-gradient(45deg,orange,brown,tan);
+    animation:jupiter 5s linear infinite ;
+}
+@keyframes jupiter{
+    from{
+        transform: rotate(0) translateX(240px);
+    }
+    to{
+        transform: rotate(360deg)translateX(240px) ;
+    }
+}
+.saturn{
+    --size:75px;
+    background: linear-gradient(45deg,blue,gray);
+    animation:saturn 5.5s linear infinite ;
+}
+@keyframes saturn{
+    from{
+        transform: rotate(0) translateX(280px);
+    }
+    to{
+        transform: rotate(360deg)translateX(280px) ;
+    }
+}
+.uranus{
+    --size:80px;
+    background: linear-gradient(45deg,blue,green);
+    animation:uranus 6s linear infinite ;
+}
+@keyframes uranus{
+    from{
+        transform: rotate(0) translateX(320px);
+    }
+    to{
+        transform: rotate(360deg)translateX(320px) ;
+    }
+}
+.neptune{
+    --size:90px;
+    background: blue;
+    animation:neptune 6.5s linear infinite ;
+}
+@keyframes neptune{
+    from{
+        transform: rotate(0) translateX(360px);
+    }
+    to{
+        transform: rotate(360deg)translateX(360px) ;
+    }
+}
+
+
+
+
+
+
+
